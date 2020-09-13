@@ -85,4 +85,5 @@ production:
   <<: *default
   database: mediabase_backend_production
   username: mediabase_backend
-  password: <%= ENV['MEDIABASE_BACKEND_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
