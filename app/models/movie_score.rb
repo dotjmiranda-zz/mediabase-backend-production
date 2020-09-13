@@ -1,0 +1,2 @@
+class MovieScore < ApplicationRecord
+end

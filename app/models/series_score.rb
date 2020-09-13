@@ -1,0 +1,2 @@
+class SeriesScore < ApplicationRecord
+end
