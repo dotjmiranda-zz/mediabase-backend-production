@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_one :profile, dependent: :destroy
   has_many :movie_watchlists, dependent: :destroy
+  has_many :watchlist_series, dependent: :destroy
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
   has_many :reviews, dependent: :destroy

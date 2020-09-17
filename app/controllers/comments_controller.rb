@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  before_action :authenticate_user!, only: [:create, :destroy]
+
   def create
     @user = User.find(params[:user_id])
 

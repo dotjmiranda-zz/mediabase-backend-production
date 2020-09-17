@@ -37,7 +37,7 @@ Rails.application.routes.draw do
     devise_scope :user do
       get 'users/current', to: 'sessions#show'
     end
-    resources :users, :only => [:show, :index]
+    resources :users, :only => [:show, :index, :update, :destroy]
   end
 
   root to: 'home#index'
