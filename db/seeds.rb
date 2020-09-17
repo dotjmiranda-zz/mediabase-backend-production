@@ -19,8 +19,6 @@ ActiveRecord::Base.connection.reset_pk_sequence!("movies")
 end
 =end
 
-require 'faker'
-
 User.create!(
     email: "admin@gmail.com",
     password: "administrator",
