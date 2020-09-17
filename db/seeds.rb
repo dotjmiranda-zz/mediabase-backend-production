@@ -19,7 +19,6 @@ ActiveRecord::Base.connection.reset_pk_sequence!("movies")
 end
 =end
 
-=begin
 require 'faker'
 
 User.create!(
@@ -65,5 +64,4 @@ User.create!(
     password: "password",
     username: "Antoniopee"
 )
-=end
 
